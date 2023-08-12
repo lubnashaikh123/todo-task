@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'todo-task';
-}
+  todoItem!:string;
+  todoArray : Array<string>=[];
+  constructor(){}
+onTodoAdd() {
+       console.log(this.todoItem);
+       this.todoArray.push(this.todoItem);
+       this.todoItem='';
+
+} 
+  }
+
